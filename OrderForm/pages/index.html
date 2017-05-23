@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Let's Order!</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+			<link href="https://fonts.googleapis.com/css?family=Griffy|Yanone+Kaffeesatz" rel="stylesheet">
+		<style>
+			body {
+				background-color: #aa55ff;
+				background-image: url(../images/images.jpg);
+				font-size: 20px;
+			}
+			table {
+				background-color: #09ca74;
+						
+				width: 40%;
+				
+				summary: "";
+			}
+			input {
+				border-radius: 18%;
+				
+			}
+			.inputLine {
+				width: 18%
+			}
+			.tax{
+				font-family: 'Griffy', cursive;
+			}
+			.headings{
+				font-family: 'Yanone Kaffeesatz', sans-serif;
+			}
+		</style>
+		
+		<script src="../js/accounting.js"></script>
+		<script src="../js/OrderForm.js"></script>
+		<script src="../js/hamburger.js"></script>
+	</head>
+
+	<body>
+		<div class="w3-sidebar w3-bar-block w3-khaki w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="http://newegg.com" class="w3-bar-item w3-button">Newegg Website</a>
+  <a href="http://amazon.com" class="w3-bar-item w3-button">Amazon Website</a>
+  <a href="http://nvidia.com" class="w3-bar-item w3-button">Nvidia Website</a>
+  <a href="http://192.168.1.121/b1liu" class="w3-bar-item w3-button">Emily Liu</a>
+  <a href="http://192.168.1.110/b1houser" class="w3-bar-item w3-button">John Houser</a>
+  <a href="http://192.168.1.164/b1tran" class="w3-bar-item w3-button">Kien Tran</a>
+</div>
+
+<div zclass="w3-main" id="main">
+	
+	<div>
+  <button class="w3-button w3-light-grey w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div style="text-align: center" class="w3-container">
+
+  </div>
+</div>
+		<h1 class="tax">Welcome to Newegg, please place your order.</h1>
+		<h2 class="headings">Created by Michael C</h2>
+		<h3>Head over to check out the <a href="../../MyClock/index.html">Current Time</a></h3>
+		<h4>Task List:</h4>
+			<ol>
+				<li>Shipping section -- debugging</li>
+				<li>Total Cost -- complete</li>
+				<li>Add description pages</li>
+				<li>Verification -- complete</li>
+				<li>Local server --> FTP Server</li>
+			</ol>
+				
+		<br>
+	
+
+		<hr>
+		<br>
+		
+<div align="center">
+		<form name="orderForm">
+			<table cellpadding="5" cellspacing="0" border="2" border=" 2 solid #000000">
+				<tbody>
+					<tr>
+						<td colspan="4" align="center"><b>Computer Parts</b></td>
+					</tr>
+
+					<tr style="background-color:#6E6EAF">
+						<td>Item</td><td>Qty</td><td>Each</td><td align="right">Total</td>
+					</tr>
+					<!-- Start of objects to Order-->
+					<tr> 
+						<td><a href = "Mice.html">Mice</a></td>
+						<td class="inputLine">
+						<input name="line" type="text" size="5" value="" onkeyup="count(this.form,0,4.80)" onkeyup="partTotalAmount(this.form,0,4.80)">
+						</td>
+						<td>$4.80</td>
+						<td align="right">
+						<input name="line_sum" type="text" size="10" readonly>
+						</td>
+
+					</tr>
+					<tr style="background-color:#cFcF43">
+						<td><a href = "hdmi.html">HDMI Cables</a></td>
+						<td class="inputLine">
+						<input name="line" type="text" size="5" value="" onkeyup="count(this.form,1,8.99)">
+						</td>
+						<td>$8.99</td>
+						<td align="right">
+						<input name="line_sum" type="text" size="10" readonly>
+						</td>
+
+					</tr>
+					<tr>
+						<td><a href = "ram.html">Ram Sticks</a></td>
+						<td class="inputLine">
+						<input name="line" type="text" size="5" value="" onkeyup="count(this.form,2,50.28)">
+						</td>
+						<td>$50.28</td>
+						<td align="right">
+						<input name="line_sum" type="text" size="10" readonly>
+						</td>
+
+					</tr>
+					<tr style="background-color:#cFcF43">
+						<td><a href = "monitor.html">Monitors</a></td>
+						<td class="inputLine">
+						<input name="line" type="text" size="5" value="" onkeyup="count(this.form,3,190.18)">
+						</td>
+						<td>$190.18</td>
+						<td align="right">
+						<input name="line_sum" type="text" size="10" readonly>
+						</td>
+
+					</tr>
+					<tr>
+						<td><a href = "keyboard.html">Keyboards</a></td>
+						<td class="inputLine">
+						<input name="line" type="text" size="5" value="" onkeyup="count(this.form,4,64.42)">
+						</td>
+						<td>$64.42</td>
+						<td align="right">
+						<input name="line_sum" type="text" size="10" readonly>
+						</td>
+
+					</tr>
+					<!-- End of objects to Order-->
+					
+					
+					
+					<!--Add total for parts as a second td-->
+					<tr style="background-color: #128832">
+						<td colspan="3" class="tax" style="text-align: right">Total for Parts</td>
+						<td style="text-align: right"><input name="partTotal" type="text" size="12" readonly></td>
+					</tr>
+					
+					
+					<!--Radio Button-->
+					<tr class="w3-yellow w3-hover-indigo" >
+						<td><a href = "graphics.html">Graphics Cards</a></td>
+						<td class="inputLine" style="font-size: 20px;">
+							
+						<input name="graphics" type="radio" onclick="setGraphics(this.value)" value="Nvidia GTX 960">Nvidia 960<br>
+						<input name="graphics" type="radio" onclick="setGraphics(this.value)" value="Nvidia GTX 970">Nvidia 970<br>
+						<input name="graphics" type="radio" onclick="setGraphics(this.value)" value="Nvidia GTX 980">Nvidia 980
+						<br>
+						Your Card is: <input type="text" id="myGraphics" readonly>
+						</td>
+						
+						<td>960:   $160.90 <br>
+							970:   $210.90 <br>
+							980:   $240.90
+						</td>
+						
+						<td align="right">
+						<input name="GraphicsTotal"id="lineGraphics"type="text" size="10" readonly>
+						</td>
+
+					</tr>
+					
+					<!--Drop Down to choose Shipping type-->
+					<tr class="w3-green w3-hover-teal">
+						<td>Shipping Type</td>
+						<td class="inputLine">
+						  <select id="theShipper">
+  							   <option>5-8 Business Days</option>
+  							  <option>2-3 Business Days</option>
+  							 <option>1 Day Rushing</option>
+   							
+ 						 </select>
+ 						 
+ 						 <br>
+ 						 <input type="text" id="OutputofCode" readonly>
+ 						 <br>
+ 						 <input type="button" value="Submit" onclick="shippingCost()">
+						</td>
+						<td>5-8 Days: Free<br>
+							2-3 Days: $15.95<br>
+							1 Day: $30.80
+							
+							</td>
+						<td align="right">
+						
+						<input id="shippingDisplay"name="line_shipping" type="text" size="10" readonly>
+						</td>
+
+					</tr>
+					
+					<!--Sales Tax-->
+					<tr style="background-color: #128832"  class="tax">
+						<td style="text-align: right" colspan="3">Sales Tax</td>
+						<td align="right"><input name="tax_sum" type="text" value="" size="12" readonly></td>
+					</tr>
+					
+					
+					
+					
+					
+					<tr>
+						
+						<td colspan="2">Calculate Grand Total</td>
+						<td align="center">
+							<input type="button" value="Calculate" onclick="calculateGrandTotal()">
+						</td>
+						<td align="right">
+						<input id="finalTotal" name="grand_total" type="text" size="10" readonly>
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+						<input   value="Reset" type="button" onclick="reset()">
+						</td>
+						<td colspan="3" align="center">
+						<input type="button" value="Press to Verify Order" onclick="get_data(this.form)">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</form>
+
+
+		<form name="confirmationForm">
+			<table border="4" cellpadding="8px" summary="">
+				<tbody width="400px">
+					<tr>
+						<td width="400px"align="center"><textarea width="300px" name="order" rows="10" cols="35"> </textarea></td>
+					</tr>
+				</tbody>
+				
+			</table>
+			
+		</form>
+	</div>
+	</div>
+	</body>
+</html>

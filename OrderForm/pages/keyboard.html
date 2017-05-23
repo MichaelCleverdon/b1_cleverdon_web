@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Let's Order!</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+			<link href="https://fonts.googleapis.com/css?family=Griffy|Yanone+Kaffeesatz" rel="stylesheet">
+		<style>
+			body {
+				background-color: #aa55ff;
+				background-image: url(../images/images.jpg);
+				font-size: 20px;
+			}
+			table {
+				background-color: #09ca74;
+						
+				width: 80%;
+				margin: auto;
+			
+				
+				summary: "";
+			}
+			input {
+				border-radius: 18%;
+				
+			}
+			.inputLine {
+				width: 18%
+			}
+			.tax{
+				font-family: 'Griffy', cursive;
+			}
+			.headings{
+				font-family: 'Yanone Kaffeesatz', sans-serif;
+			}
+		</style>
+		
+		<script src="../js/accounting.js"></script>
+		<script src="../js/OrderForm.js"></script>
+		<script src="../js/hamburger.js"></script>
+	</head>
+
+	<body>
+		<div class="w3-sidebar w3-bar-block w3-khaki w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="http://newegg.com" class="w3-bar-item w3-button">Newegg Website</a>
+  <a href="http://amazon.com" class="w3-bar-item w3-button">Amazon Website</a>
+  <a href="http://nvidia.com" class="w3-bar-item w3-button">Nvidia Website</a>
+</div>
+
+<div zclass="w3-main" id="main">
+	
+	<div>
+  <button class="w3-button w3-light-grey w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div style="text-align: center" class="w3-container">
+
+  </div>
+</div>
+		<h1 class="tax">Ninja Keyboards</h1>
+		<h2 class="headings">Created by Michael C</h2>
+			
+			<a href="index.html">Back to Home Page</a>
+			<br>
+			
+			<table>
+			<tr class="w3-hover-indigo">
+				<td>The keyboards are antighosting guarenteed. They have a number pad on the right and are very silent when typing. Great for office work.</td>
+				<td><img src="../images/keyboard1.jpg" alt="Keyboard"></td>
+			</tr>
+		</table>
+		<div class="w3-indigo">
+			<p>Alyse said, "Typing at the office has never been smoother!"</p>
+			</div>
+
+				
+		<br>
+	</div>
+	</body>
+	</html>
