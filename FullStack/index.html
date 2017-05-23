@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FULL STACK</title>
+		<link rel="stylesheet" href="css/w3.css">
+		<link href="https://fonts.googleapis.com/css?family=Baloo|Fira+Sans+Extra+Condensed" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/css.css">
+	</head>
+	
+<body>
+
+		<h1 class="title">I want to be a Full Stack Web Dev!</h1>
+		<div class="w3-bar w3-black">
+  <a href="https://www.turnkeylinux.org/lampstack" class="w3-bar-item w3-button">LAMP</a>
+  <a href="https://www.oracle.com/database/index.html" class="w3-bar-item w3-button">Oracle Database</a>
+  <a href="http://php.net/manual/en/faq.general.php" class="w3-bar-item w3-button">PHP Information</a>
+
+</div>
+		<h2>Created by Michael Clevrdon</h2>
+		<h2>--but what is a "Full Stack"? --</h2>
+		
+		<h3>
+			<a href="images/FullStack.png">
+				..Well let me show you in this overview drawing!
+		</a>
+		</h3>
+		<!-- Google Fonts
+			Background Picture thats Relevant
+			Link to sites or pages for more info
+			Interesting way to explain "Full"
+			Interesting way to explain "Stack"
+			Interesting way to explain "LAMP Stack"
+			Make in line Links on keywords(To Wikipedia)
+		-->
+		<h4>What does "Full" in Full Stack mean?</h4>
+			<pre>
+			<a href="images/frontend-backend.png">Full</a> means that you develop both the front end, and the back end.
+			The front end is what the user sees on what is called the client computer.
+			The back end is what is on the server computer that delivers content to the front end.
+			</pre>
+		<h4>What does "Stack" in Full Stack mean?</h4><!--Add illustration-->
+			<pre>
+			Stack means that several programs, a "stack" of programs, are used.
+			<a href="https://en.wikipedia.org/wiki/HTML5">HTML 5</a>, CSS, and JS are used in the front end stack.
+			Linux, Apache, MySql and PHP are used in the back end stack. 
+			</pre>
+		<h4>What is a "LAMP" stack?</h4>
+			<pre>
+			<a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a> stands for Linux, Apache, MySQL and PHP. These are all used for server/database creation.
+			
+			This means that information can be secured in a seperate database in a completely seperate place
+			in the world.
+			
+			Linux is the basis for server operation
+			Apache is the web server itself
+			MySQL is the database that we use
+			PHP is the database programming language
+			</pre> 
+			<hr>
+		<h4 class="title">---Start of Checkpoint 2---</h4>
+			<hr>
+		<p>What is a database?</p>
+		<pre>
+			A database is a massive storage tool that can be used to organize and sort data into groups/columns.
+			Many businesses use these to help manage the sheer amount of data that they use on a day to day basis.
+		</pre>
+		<p>What is MySQL?</p>
+			<pre>
+			MySQL is a tool used to create databases.
+			It is the second most popular database creation
+			tool in the world, second only to Oracle.
+			</pre>
+		<p>What is SQL</p>
+		<pre>
+		S = Structured, meaning the data can be easily found
+		Q = Query, asking a question to a database, data retrieval
+		L = Language, This is a programming language.
+		
+	MySQL is the name of the database, while SQL is the language that is used inside the database to answer question</pre>
+	<p>What is PHP?</p>
+		<pre>
+			PHP is the bridge between front and back end. PHP reads HTML forms then sends the form info to the server. 
+			PHP also reads the database, then sends that information back to another HTML form. PHP is a server side language which is totally secure and private.
+		</pre>
+		
+	<p>MySQL table: Has rows and columns, where data is stored and organized in cells. </p>
+	
+	<ol>
+		<li>$mysql -u root -p (press enter)</li>
+		<li>Type in your password</li>
+		<li>mysql: </li>
+		<li>Open SQL in W3</li>
+		<li>show databases;</li>
+		<li>CREATE DATABASE 'db_name'</li>
+		<li>USE 'db_name'</li>
+		<pre>
+8.			mysql> CREATE TABLE table_name (
+   				 -> employee_id int(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+   				 -> fname varchar(20),
+   				 -> mname varchar(20),
+   				 -> lname varchar(20) NOT NULL,
+   				 -> job_description varchar(30) NOT NULL,
+   				 -> );
+</pre>
+<img src="images/create-table.png" alt="create table">
+		<pre>
+9.			INSERT INTO 'table_name' (fname, mname, lname, job_description)
+				-> VALUES('Taylor', 'A', 'Swift', 'Musician');
+		</pre>
+		<img src="images/select-all.png" alt="select all">
+		<li></li>
+	</ol>
+	
+	</body>
+</html>

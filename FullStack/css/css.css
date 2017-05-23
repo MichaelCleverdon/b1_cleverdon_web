@@ -1,0 +1,13 @@
+body{
+	background-image: url("../images/backgroundImage.jpg");
+	font-size: 20px;
+	
+}
+.title{
+	font-family: 'Baloo', cursive;
+}
+pre{
+font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+
